@@ -1,3 +1,38 @@
+/*METEO*/
+.meteoImg{
+    text-align: center;
+    padding-top: 1.3em;
+}
+.meteoTemp{
+    padding-left:5em;
+    padding-top: 1em;
+}
+.temp{
+    font-size:3em;
+}
+.unitT{
+    font-size: 2em;
+}
+.ville{
+    font-size: 1.5em;
+    text-align:center;
+}
+.titreDetail p{
+    font-size: 0.9em;
+    font-weight: normal;
+    margin-top: 0.8em;
+}
+.infos{
+    text-align: right;
+}
+.infos p{
+    font-size:1.5em;
+}
+.unit{
+    text-align: left;
+}
+
+/*APAREILS*/
 .boutonLight{
     height:1em;
     border: none;

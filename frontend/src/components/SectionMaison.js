@@ -10,7 +10,9 @@ const SectionMaison = () => {
     return (
         <Container>
             <Row lg md xs ="4" className="widget">
-                <Col xs ="12" md lg="4">TU MET LE SYST7ME DE SECURITER LA</Col>
+                <Col xs ="12" md lg="4">
+                    
+                </Col>
                 <Col xs ="12" md lg="8">
                    {meteo}
                 </Col>
