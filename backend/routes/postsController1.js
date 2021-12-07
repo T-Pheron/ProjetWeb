@@ -2,17 +2,15 @@ const express = require('express');
 const router = express.Router();
 const ObjectID = require('mongoose').Types.ObjectId;
 
-const { PostsModel1 } = require('../models/test1Model1');
+const { PostsModel1 } = require('../models/model1');
 
-//get
 router.get('/', (req, res) => {
-    PostsModel1.find((err, docs) => {
+    PostsModel.find((err, docs) => {
         if (!err) res.send(docs);
         else console.log("Error to get data : " + err);
     })
 });
 
-//post
 router.post('/', (req, res) => {
     const newRecord = new PostsModel1({
         temperature: req.body.temperature,
@@ -37,7 +35,7 @@ router.put("/:id", (req, res) => {
         heure: req.body.heure
     };
 
-    PostsModel1.findByIdAndUpdate(
+    PostsModel.findByIdAndUpdate(
         req.params.id,
         { $set: updateRecord },
         { new: true },
@@ -48,12 +46,11 @@ router.put("/:id", (req, res) => {
     )
 });
 
-//delete
 router.delete("/:id", (req, res) => {
     if (!ObjectID.isValid(req.params.id))
         return res.status(400).send("ID unknow : " + req.params.id)
 
-    PostsModel1.findByIdAndRemove(
+    PostsModel.findByIdAndRemove(
         req.params.id,
         (err, docs) => {
             if (!err) res.send(docs);

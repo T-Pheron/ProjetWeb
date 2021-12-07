@@ -15,7 +15,10 @@ router.post('/', (req, res) => {
     const newRecord = new PostsModel({
         value: req.body.value,
         unit: req.body.unit,
-        date: req.body.date
+        date: req.body.date,
+        temperature: req.body.temperature,
+        unit: req.body.unit,
+        heure: req.body.heure
     });
 
     newRecord.save((err, docs) => {
