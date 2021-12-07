@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
 
-export default class App extends React.Component {
+export default class GraphiqueConsomation extends React.Component {
 
     constructor(props) {
         super(props);
