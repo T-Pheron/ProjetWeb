@@ -1,3 +1,5 @@
+// Cette partie du code contient les différentes méthodes utilisées pour interagire avec notre base de donnée. 
+
 const express = require('express');
 const router = express.Router();
 const ObjectID = require('mongoose').Types.ObjectId;

@@ -1,3 +1,5 @@
+// Cette partie du code permet la connection à notre base de donnée sur mongoDB.
+
 const mongoose = require('mongoose');
 
 mongoose.connect(
