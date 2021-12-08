@@ -122,21 +122,38 @@ export default class AfficheMeteo extends React.Component {
             
             <div className="widgetMeteo">
                 <Row>
-                    <Col xs md lg="3" className="meteoImg">
+                    <Col xs="6" md lg="3" className="meteoImg">
                         <img src = {imgT} alt="Play"/>
                     </Col>
-                    <Col xs md lg="6" className="meteoTemp">
-                        <Row>
-                            <p>Température</p>
+                    <Col xs="6" md lg="3" className="meteoTemp">
+                        <Row className="temperature">
+                            <Col xs md lg="6" className="temp">{Math.round(this.state.temp - 273.15)}</Col>
+                            <Col xs md lg="6" className="unitT"><p>°C</p></Col>
                         </Row>
-                        <Row>
-                            <p>{Math.round(this.state.temp - 273.15)}</p>
+                        <Row className="ville">
+                            <p>Paris</p>
                         </Row>
                     </Col>
-                    <Col xs md lg="3" className="meteoTempH">
+                    <Col xs="12" md lg="6" className="meteoTempH">
                         <Row>
-                            <p>Température</p>
-                            <p>{this.state.name}</p>
+                            <Col xs md lg="6" className="titreDetail"><p>Ressentie: </p></Col>
+                            <Col xs md lg="3" className="infos"><p>{Math.round(this.state.feels_like - 273.15)}</p></Col>
+                            <Col xs md lg="3" className="unit"><p>°C</p></Col>
+                        </Row>
+                        <Row>
+                            <Col xs md lg="6" className="titreDetail"><p>Température max:</p></Col>
+                            <Col xs md lg="3" className="infos"><p>{Math.round(this.state.temp_max- 273.15)}</p></Col>
+                            <Col xs md lg="3" className="unit"><p>°C</p></Col>
+                        </Row>
+                        <Row>
+                            <Col xs md lg="6" className="titreDetail"><p>Température min:</p></Col>
+                            <Col xs md lg="3" className="infos"><p>{Math.round(this.state.temp_min- 273.15)}</p></Col>
+                            <Col xs md lg="3" className="unit"><p>°C</p></Col>
+                        </Row>
+                        <Row>
+                            <Col xs md lg="6" className="titreDetail"><p>Vitesse vent: </p></Col>
+                            <Col xs md lg="3" className="infos"><p>{Math.round(this.state.speed * 3.6)}</p></Col>
+                            <Col xs md lg="3" className="unit"><p>km/h</p></Col>
                         </Row>
                     </Col>
                 </Row>

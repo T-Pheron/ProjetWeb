@@ -74,13 +74,13 @@ export default class AfficheScene extends React.Component {
             
             <div className="widgetscene">
                 <Row>
-                    <Col xs md lg="3" className="sceneImg">
+                    <Col xs md="4" lg="3" className="sceneImg">
                         <img src = {this.state.img} alt="SceneImg"/>
                     </Col>
-                    <Col xs md lg="6" className="sceneName">
+                    <Col xs md="4" lg="6" className="sceneName">
                         <p>{this.state.name}</p>
                     </Col>
-                    <Col xs md lg="3" className="sceneButon">
+                    <Col xs md="4" lg="3" className="sceneButon">
                         <button className="boutonLight" onClick={this.handleClick}><img src = {imgPlay} alt="Play"/></button>
                     </Col>
                 </Row>
