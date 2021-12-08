@@ -8,7 +8,7 @@ const Footer = () => {
             <Card.Body>
                 <Card.Text>
                     <p>
-                        Voici notre footer je ne sais pas quoi mettre dedans, c'est nul mais au moins il est là
+                        ©HomeApp|2021
                     </p>
                     
                 </Card.Text>

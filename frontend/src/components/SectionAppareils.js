@@ -10,7 +10,7 @@ import AfficheEcran from '../affichage/AfficheEcran.js';
 const SectionAppareils = () => {
     let ledPlafondTV = <AfficheLight id="36157f90-bf5a-45f0-9f28-b044d6326384" name="Leds Plafond Télé"/>
     let ledCuisine = <AfficheLight idAfficheLight id="aa2c3ed9-ad8b-4f6b-87a4-74393b2c4f6c" name="Leds Cuisine"/>
-    let ledPlafondCanap = <AfficheLight id="9f238719-c22e-40b7-908d-7bde8bfda8e3" name="Leds Plafond Canapé"/>
+    let ledPlafondCanap = <AfficheLight id="9f238719-c22e-40b7-908d-7bde8bfda8e3" name="Leds Plafond Bureau"/>
     let ledSalleDeBain = <AfficheLight id="1aebb681-ef85-4d11-9e81-de61498e9e9e" name="Leds Salle de Bain"/>
 
     let TVSalon = <AfficheEcran id="d10b5f1a-0f7d-d07a-80ea-6eb93d67240d" name="TV Samsung 7 Series"/>
