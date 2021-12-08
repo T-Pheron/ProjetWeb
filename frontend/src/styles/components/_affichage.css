@@ -120,3 +120,49 @@
     text-align: center;
     color: black;
 }
+
+
+/*ADMIN*/
+.divAdmin{
+    font-weight: 500;
+    min-height: 350px;
+    background-color: #EFF5FB;
+    padding : 3em;
+    margin-top:3em;
+    margin-bottom:3em;
+    border-radius: 10px;
+}
+.remplisageAdmin{
+    padding: 2em;
+    text-align: center;
+}
+.remplisageAdmin input{
+    border: none;
+    text-align: center;
+    padding:1em;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(138, 138, 138, 0.308);
+}
+.remplisageAdmin input:hover{
+    border: none;
+    text-align: center;
+    padding:1.1em;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(110, 110, 110, 0.637);
+}
+.buttonAdmin button{
+    border: none;
+    text-align: center;
+    padding:1em;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(138, 138, 138, 0.308);
+}
+.buttonAdmin button:hover{
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    padding:1.1em;
+    border-radius: 5px;
+    background-color:rgb(127, 229, 255);
+    box-shadow: 1px 1px 10px rgba(138, 138, 138, 0.308);
+} 

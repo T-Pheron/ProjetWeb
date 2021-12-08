@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.js";
 import axios from "axios";
+import {Row, Container, Col} from 'react-bootstrap';
 
 export default class AffichageAdmin extends React.Component {
 
@@ -57,14 +58,22 @@ export default class AffichageAdmin extends React.Component {
     render() {
 
         return (
-            <div className="flights">
-                <span className="itemsTitle">Admin</span>
-                <div className="flightomponent">
-                    <input type="number" placeholder="La consomation" onChange={event => this.handleChangeValue(event)} />
-                    <input type="text" placeholder="La date" onChange={event => this.handleChangeDate(event)} />
-                    <button onClick={this.handleClick}>Valider</button>
+            <Container>
+                <div className="divAdmin">
+                    <p>Cette page vous permez de rajouter les informations de consomation électrique à la base de donné de l'appartement</p>
+                    <Row>
+                        <Col className="remplisageAdmin">
+                            <input type="number" placeholder="Valeur" onChange={event => this.handleChangeValue(event)} />
+                        </Col>
+                        <Col className="remplisageAdmin">
+                            <input type="text" placeholder="Date jj/mm/aa" onChange={event => this.handleChangeDate(event)} />
+                        </Col>
+                    </Row>
+                    <Row className="buttonAdmin">
+                        <button onClick={this.handleClick}>Valider</button>
+                    </Row>
                 </div>
-            </div>
+            </Container>
         )
     }
 }

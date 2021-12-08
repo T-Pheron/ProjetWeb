@@ -46,7 +46,17 @@ code {
   margin-left: auto;
 }
 
+.graphique{
+  background-color:white;
+  text-align: center;
+  padding: 4em;
+  padding-left:2.5em;
+  font-weight: 500;
+  min-height: 150px;
+  background-color: #EFF5FB;
+  border-radius: 10px;
 
+}
 
 .error{
   background-color: #002a60;
