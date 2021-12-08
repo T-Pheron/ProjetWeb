@@ -1,8 +1,8 @@
 import React from 'react';
 import Home from './pages/Home';
-import Historique from './pages/Historique';
+import Historique from './pages/Scenes';
 import Appareils from './pages/Appareils';
-// import Scenes from './pages/Scenes';
+import Scenes from './pages/Scenes';
 import Consomation from './pages/Consomation';
 import Error from './pages/Error';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -15,7 +15,7 @@ const App = () => {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/historique" element={<Historique />} />
         <Route exact path="/appareils" element={<Appareils />} />
-        {/* <Route exact path="/scenes" element={<Scenes />} /> */}
+        <Route exact path="/scenes" element={<Scenes />} />
         <Route exact path="/consomation" element={<Consomation />} />
         <Route exact path="/admin" element={<Admin />} />
         <Route path="*" element={<Error />} />
