@@ -35,7 +35,7 @@
     text-align: center;
 }
 .widgetTemperature:hover{
-    background: linear-gradient(to top, white, #5ae0ce);
+    background: linear-gradient(to top, white, #e05a98);
     box-shadow: 1px 1px 10px rgb(206, 206, 206);
 }
 
